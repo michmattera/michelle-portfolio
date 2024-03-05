@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% load static %}
+{% block content %}
+
+<h1>Contact page</h1>
+<p>test</p>
+<p>test</p>
+<p>test</p>
+<p>test</p>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+ </form>
+
+{% endblock %}
