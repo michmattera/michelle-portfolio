@@ -8,4 +8,5 @@ urlpatterns = [
     path('', views.Home, name='home'),
     # for contact links
     path("contact/", views.contact_view, name="contact"),
+    path('success/', views.success_view, name='success'),
 ]

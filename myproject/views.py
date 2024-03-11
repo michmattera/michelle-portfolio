@@ -13,8 +13,14 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'success.html')
-    form = ContactForm()
+            return redirect('success')
+    else:
+        form = ContactForm()
     context = {'form': form}
     return render(request, 'contact.html', context)
+
+
+
+def success_view(request):
+    return render(request, 'success.html')
 
