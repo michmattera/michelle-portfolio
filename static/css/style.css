@@ -21,7 +21,7 @@ section {
 /*About section*/
 .about-section{
     display: block;
-    margin-top: auto;
+    margin-top: 250px;
 }
 .about-text{
     animation-duration: 3s;
@@ -44,7 +44,10 @@ section {
  .test-section{
     height:100%;
     width:100%;
-      position:absolute ;  background:radial-gradient(#fff,#98ACB9);
+    position:absolute ;
+    background:radial-gradient(#fff,#98ACB9);
+    overflow:hidden;
+    display: block;
     }
 
 .test{
