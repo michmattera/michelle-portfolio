@@ -3,46 +3,91 @@
 {% load static %}
 {% block content %}
 
+<!-- test section-->
+<section class="test-section">
+    <div class="test">
+        <div>
+            <img src="{% static 'images/sticker_praying_transp.png' %}" alt="email icon" class="small-animation">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker_standing-transp.gif' %}" alt="email icon" class="small-animation">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
+        </div>
+    </div>
+    <!-- New set of div elements -->
+    <div class="test test1">
+        <div>
+            <img src="{% static 'images/sticker_praying.webp' %}" alt="email icon" class="small-animation reverse">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker_standing.webp' %}" alt="email icon" class="small-animation reverse">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
+        </div>
+        <div>
+            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
+        </div>
+    </div>
+</section>
+
+
+
 <!-- Mashead header-->
 <header class="masthead">
-    <div class="container px-5">
+    <div class="container px-md-4">
         <div class="row gx-5 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-lg-2">
+                <!-- Picture -->
+                <div class="profile-img">
+                    <img class="" src="{% static 'images/sticker_standing-transp.gif' %}" alt="profile picture">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
                 <!-- Mashead text and app badges-->
                 <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                    <p>Hello! 👋 My name is</p>
+                    <p >Hello! 👋 My name is</p>
                     <h1>Michelle Mattera</h1>
                     <p><span id="headline"></span></p>
                     <div class="d-flex flex-column flex-lg-row align-items-center">
-                        <a class="me-lg-3 mb-4 mb-lg-0" aria-label="Linkedin"
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
                             href="https://www.linkedin.com/in/michelle-mattera-a5283019b/" target="_blank"
                             rel="noopener" title="Link for Linkedin (opens in a new page)"><img class="app-badge"
                                 src="{% static 'images/linkedin.icon.svg' %}" alt="linkedin icon" /></a>
-                        <a class="me-lg-3 mb-4 mb-lg-0" aria-label="Github" href="https://github.com/michmattera"
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Github" href="https://github.com/michmattera"
                             target="_blank" rel="noopener" title="Link for Github (opens in a new page)"><img
                                 class="app-badge" src="{% static 'images/github.icon.svg' %}" alt="github icon" /></a>
-                        <a class="me-lg-3 mb-4 mb-lg-0" aria-label="Email" href="" target="_blank" rel="noopener"
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Email" href="" target="_blank" rel="noopener"
                             title="Link for Email (opens in a new page)"><img class="app-badge"
                                 src="{% static 'images/email.icon.svg' %}" alt="email icon" /></a>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="profile-img">
-                <img class="" src="{% static 'images/profile.jpg' %}" alt="profile picture">
-            </div>
     </div>
 </header>
 
 <!-- About section-->
-<section>
+<section class="about-section">
     <div class="wrapper">
         <div>
             <h2>About me!</h2>
-            <p>I am a </p>
+            <p class="about-text">I am a aaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbb ccccccccccccc ddddddddd</p>
         </div>
     </div>
 </section>
+
 
 <!-- Skills and Tools section-->
 <section>
@@ -120,7 +165,8 @@
         <div class="container-projects">
             <div class="project-text">
                 <h3>Newline Alebrije</h3>
-                <p>In need of an Alebrije? Read about your spiritual guide from the world of the death and complete the form to match with one.</p>
+                <p>In need of an Alebrije? Read about your spiritual guide from the world of the death and complete the
+                    form to match with one.</p>
                 <div class="container-icons-small">
                     <i class="box-icon-small devicon-html5-plain"></i>
                     <p>HTML5</p>
@@ -130,8 +176,8 @@
                     <p>CSS3</p>
                 </div>
                 <div class="project-links">
-                    <a href="#">Live demo</a>
-                    <a href="#">Github link</a>
+                    <a href="#" class="orange">Live demo</a>
+                    <a href="#" class="orange">Github link</a>
                 </div>
             </div>
             <div class="project-img">
@@ -141,48 +187,5 @@
     </div>
 </section>
 
-<!-- Basic features section-->
-<section class="bg-light">
-    <div class="container px-5">
-        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-            <div class="col-12 col-lg-5">
-                <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information
-                    about your application, why it was built, the problem it solves, or anything else! There's plenty of
-                    space for text here, so don't worry about writing too much.</p>
-            </div>
-            <div class="col-sm-8 col-md-6">
-                <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle"
-                        src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Call to action section-->
-<section class="cta">
-    <div class="cta-content">
-        <div class="container px-5">
-            <h2 class="text-white display-1 lh-1 mb-4">
-                Stop waiting.
-                <br />
-                Start building.
-            </h2>
-            <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age"
-                target="_blank">Download for free</a>
-        </div>
-    </div>
-</section>
-
-<!-- App badge section-->
-<section class="bg-gradient-primary-to-secondary" id="download">
-    <div class="container px-5">
-        <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-            <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="" alt="..." /></a>
-            <a href="#!"><img class="app-badge" src="" alt="..." /></a>
-        </div>
-    </div>
-</section>
 
 {% endblock %}

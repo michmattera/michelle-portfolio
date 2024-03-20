@@ -11,6 +11,124 @@ section {
     margin: 0;
     padding: 50px 0;
 }
+.orange{
+    color: #ff9900;
+}
+.white{
+    color: #fff;
+}
+
+/*About section*/
+.about-section{
+    display: block;
+    margin-top: auto;
+}
+.about-text{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/*test section*/
+ .test-section{
+    height:100%;
+    width:100%;
+      position:absolute ;  background:radial-gradient(#fff,#98ACB9);
+    }
+
+.test{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.test div{
+position:absolute ;
+display:block ;
+}
+.small-animation{
+    width: 55px;
+    height: 55px;
+} 
+.test div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.test div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.test div:nth-child(3){
+    left:40%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+}
+.test div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.test div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.test div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.test1{
+    transform: rotateX(180deg);
+}
+
+
+
+
 
 /*Skills section*/
 .wrapper {
@@ -33,16 +151,15 @@ section {
     font-size: 80px;
 }
 .profile-img>img{
-    border-radius: 50%;
-    border: 3px solid black;
+    /* border-radius: 50%; */
     height: 300px;
-    width: 30%;
+    width: 50%;
+    /* background-color: black; */
 }
 
 /* Project section */
-
 .projects{
-    background-color: grey;
+    background-color: #f0f0f0;
 }
 .container-projects{
     display: flex;
@@ -57,7 +174,7 @@ section {
     width: 50%;
 }
 .project-img {
-    height: 600px;
+    height: 700px;
     text-align: center;
     display: flex;
     padding-top: 30px;
