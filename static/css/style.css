@@ -2,7 +2,27 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+body{
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 0,
+      "INFM" 0,
+      "SPAC" 0;
+}
 
+/* .shantell-sans-<uniquifier> {
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 0,
+      "INFM" 0,
+      "SPAC" 0;
+  } */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
     display: block;
 }
@@ -18,11 +38,58 @@ section {
     color: #fff;
 }
 
+/*separate  section*/
+.border-div {
+    width: 100%;
+    height: 80px; /* Adjust the height of the border */
+    position: relative; /* Ensure proper positioning */
+  }
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute; /* Position the SVG within the container */
+    top: 0;
+    left: 0;
+  }
+
 /*About section*/
 .about-section{
     display: block;
-    margin-top: 250px;
+    margin-top: 230px;
+    /* background: radial-gradient(#f0f0f0, #98ACB9); */
+    /* background: radial-gradient(#98ACB9, #FFFFFF, #ADC7C8, #4F6E71); */
+    /* border-top: 5px solid black; */
+
 }
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-text-side, .about-img-side{
+    width: 45%;
+    flex-direction: row;
+}
+.frame{
+    width: 100%;
+    height: 80%;
+    margin: 5%;
+}
+
+  /* .about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px dashed #98ACB9; /* Adjust thickness and color as needed */
+    border-radius: 50%;
+    transform: rotate(-15deg); /* Adjust rotation angle as needed */
+  } */
 .about-text{
     animation-duration: 3s;
     animation-name: slidein;
@@ -131,9 +198,11 @@ display:block ;
 
 
 
-
-
 /*Skills section*/
+.skills-section{
+    background: radial-gradient(#f0f0f0, #98ACB9);
+
+}
 .wrapper {
     width: 100%;
     margin: 0 auto;

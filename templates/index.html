@@ -3,7 +3,7 @@
 {% load static %}
 {% block content %}
 
-<!-- test section-->
+<!-- sticker section-->
 <section class="test-section">
     <div class="test">
         <div>
@@ -16,7 +16,7 @@
             <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
         </div>
         <div>
-            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
+            <img src="{% static 'images/sticker_thinking.webp' %}" alt="email icon" class="small-animation">
         </div>
         <div>
             <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation">
@@ -25,16 +25,18 @@
     <!-- New set of div elements -->
     <div class="test test1">
         <div>
-            <img src="{% static 'images/sticker_praying.webp' %}" alt="email icon" class="small-animation reverse">
+            <img src="{% static 'images/sticker_praying_transp.png' %}" alt="email icon"
+                class="small-animation reverse">
         </div>
         <div>
-            <img src="{% static 'images/sticker_standing.webp' %}" alt="email icon" class="small-animation reverse">
+            <img src="{% static 'images/sticker_standing-transp.gif' %}" alt="email icon"
+                class="small-animation reverse">
         </div>
         <div>
             <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
         </div>
         <div>
-            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
+            <img src="{% static 'images/sticker_thinking.webp' %}" alt="email icon" class="small-animation reverse">
         </div>
         <div>
             <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation reverse">
@@ -78,33 +80,47 @@
     </div>
 </header>
 
+<!-- Div to separate sections -->
+<div class="border-div">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <polygon points="0 0 100 10 0 10" fill="yellow"/>
+  </svg>
+</div>
+
+
 <!-- About section-->
 <section class="about-section">
     <div class="wrapper">
-        <div>
+        <div class="about-container">
+            <div class="about-text-side">
             <h2>About me!</h2>
-            <p class="about-text">Hey there! 👋 I'm Michelle, a web wizard with a penchant for pixels and a knack for
-                coding magic. When I'm not crafting beautiful websites, you'll find me lost in a world of coffee, code,
-                and cat videos.
+            <h4>I am a curiosity driven Full Stack Developer.</h4>
+            <p class="about-text">Greetings! 🎮 As a curiosity-driven Full-Stack Developer, I thrive on the intersection
+                of creativity and logic. I'm on a mission to craft immersive digital experiences that captivate and
+                inspire. 🚀</p>
+            <p class="about-text">When I'm not knee-deep in code, you'll likely find me immersed in the worlds of video
+                games, unraveling intricate puzzles, or lost in the pages of a fantastical adventure. 🎲 I'm a proud
+                advocate for animals 🐾, an avid reader of fantasy novels 📚, and a seeker of inspiration from every
+                corner of life. 🌟</p>
+            <p class="about-text">I have a diploma in Full Stack Software development from the Code Institute,
+                specialized in data analysis. My journey has equipped me with the skills to tackle complex problems and
+                create innovative solutions. 🔧</p>
+            <p class="about-text">I believe that hard work, a cup of tea ☕, and a cat 🐱 can solve everything. With this
+                philosophy in mind, I approach every challenge with determination and creativity, striving to make a
+                positive impact in the world of technology. 💡</p>
+            </div>
 
-                Born to click, scroll, and code my way through the digital universe, I thrive on turning complex
-                problems into pixel-perfect solutions. From elegant designs to seamless user experiences, I'm here to
-                make the web a better place, one line of code at a time.
-
-                With a cup of coffee in one hand and a keyboard in the other, I'm on a mission to create web experiences
-                that not only dazzle but also delight users. So let's collaborate, innovate, and make some internet
-                magic together!</p>
             <!-- Picture -->
-            <!-- <div class="profile-img">
-                <img class="" src="{% static 'images/profile.jpg' %}" alt="profile picture">
-            </div> -->
+            <div class="about-img-side">
+                <img class="frame" src="{% static 'images/profile-no-background.png' %}" alt="profile picture">
+            </div>
         </div>
     </div>
 </section>
 
 
 <!-- Skills and Tools section-->
-<section>
+<section class="skills-section">
     <div class="wrapper">
         <h2>Skills and Tools</h2>
         <h3>Things I can do</h3>
