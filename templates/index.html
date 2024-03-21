@@ -3,53 +3,12 @@
 {% load static %}
 {% block content %}
 
-<!-- sticker section-->
-<section class="test-section">
-    <div class="test">
-        <div>
-            <img src="{% static 'images/sticker_praying_transp.png' %}" alt="email icon" class="small-animation">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker_standing-transp.gif' %}" alt="email icon" class="small-animation">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker_thinking.webp' %}" alt="email icon" class="small-animation">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation">
-        </div>
-    </div>
-    <!-- New set of div elements -->
-    <div class="test test1">
-        <div>
-            <img src="{% static 'images/sticker_praying_transp.png' %}" alt="email icon"
-                class="small-animation reverse">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker_standing-transp.gif' %}" alt="email icon"
-                class="small-animation reverse">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker_thinking.webp' %}" alt="email icon" class="small-animation reverse">
-        </div>
-        <div>
-            <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation reverse">
-        </div>
-    </div>
-</section>
-
 
 
 <!-- Mashead header-->
-<header class="masthead">
-    <div class="container px-md-4">
-        <div class="row gx-5 align-items-center">
+<header class="header">
+    <section class="landing-section">
+        <div class="landing-container">
             <div class="col-lg-6 order-lg-2">
                 <!-- Picture -->
                 <div class="profile-img">
@@ -60,7 +19,7 @@
                 <!-- Mashead text and app badges-->
                 <div class="mb-5 mb-lg-0 text-center text-lg-start">
                     <p>Hello! 👋 My name is</p>
-                    <h1>Michelle Mattera</h1>
+                    <h1 class="headings">Michelle Mattera</h1>
                     <p><span id="headline"></span></p>
                     <div class="d-flex flex-column flex-lg-row align-items-center">
                         <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
@@ -77,14 +36,55 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- sticker section-->
+        <!-- <section class="test-section"> -->
+        <div class="test">
+            <div>
+                <img src="{% static 'images/sticker_praying_transp.png' %}" alt="email icon" class="small-animation">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker_standing-transp.gif' %}" alt="email icon" class="small-animation">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker_thinking.webp' %}" alt="email icon" class="small-animation">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation">
+            </div>
+        </div>
+        <!-- New set of div elements -->
+        <div class="test test1">
+            <div>
+                <img src="{% static 'images/sticker_praying_transp.png' %}" alt="email icon"
+                    class="small-animation reverse">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker_standing-transp.gif' %}" alt="email icon"
+                    class="small-animation reverse">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation reverse">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker_thinking.webp' %}" alt="email icon" class="small-animation reverse">
+            </div>
+            <div>
+                <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation reverse">
+            </div>
+        </div>
+    </section>
 </header>
 
 <!-- Div to separate sections -->
 <div class="border-div">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-    <polygon points="0 0 100 10 0 10" fill="yellow"/>
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="0 0 100 10 0 10" fill="#f0f0f0" />
+    </svg>
+    <img src="static/images/sticker-eye.webp" alt="Small object" class="small-object">
 </div>
 
 
@@ -92,27 +92,31 @@
 <section class="about-section">
     <div class="wrapper">
         <div class="about-container">
-            <div class="about-text-side">
-            <h2>About me!</h2>
-            <h4>I am a curiosity driven Full Stack Developer.</h4>
-            <p class="about-text">Greetings! 🎮 As a curiosity-driven Full-Stack Developer, I thrive on the intersection
-                of creativity and logic. I'm on a mission to craft immersive digital experiences that captivate and
-                inspire. 🚀</p>
-            <p class="about-text">When I'm not knee-deep in code, you'll likely find me immersed in the worlds of video
-                games, unraveling intricate puzzles, or lost in the pages of a fantastical adventure. 🎲 I'm a proud
-                advocate for animals 🐾, an avid reader of fantasy novels 📚, and a seeker of inspiration from every
-                corner of life. 🌟</p>
-            <p class="about-text">I have a diploma in Full Stack Software development from the Code Institute,
-                specialized in data analysis. My journey has equipped me with the skills to tackle complex problems and
-                create innovative solutions. 🔧</p>
-            <p class="about-text">I believe that hard work, a cup of tea ☕, and a cat 🐱 can solve everything. With this
-                philosophy in mind, I approach every challenge with determination and creativity, striving to make a
-                positive impact in the world of technology. 💡</p>
+            <div class="about-text-side" id="about-text">
+                <h2 class="headings">About me!</h2>
+                <h4 class="headings">I am a curiosity driven Full Stack Developer.</h4>
+                <p class="about-text">Greetings! 🎮 As a curiosity-driven Full-Stack Developer, I thrive on the
+                    intersection
+                    of creativity and logic. I'm on a mission to craft immersive digital experiences that captivate and
+                    inspire. 🚀</p>
+                <p class="about-text">When I'm not knee-deep in code, you'll likely find me immersed in the worlds of
+                    video
+                    games, unraveling intricate puzzles, or lost in the pages of a fantastical adventure. 🎲 I'm a proud
+                    advocate for animals 🐾, an avid reader of fantasy novels 📚, and a seeker of inspiration from every
+                    corner of life. 🌟</p>
+                <p class="about-text">I have a diploma in Full Stack Software development from the Code Institute,
+                    specialized in data analysis. My journey has equipped me with the skills to tackle complex problems
+                    and
+                    create innovative solutions. 🔧</p>
+                <p class="about-text">I believe that hard work, a cup of tea ☕, and a cat 🐱 can solve everything. With
+                    this
+                    philosophy in mind, I approach every challenge with determination and creativity, striving to make a
+                    positive impact in the world of technology. 💡</p>
             </div>
 
             <!-- Picture -->
             <div class="about-img-side">
-                <img class="frame" src="{% static 'images/profile-no-background.png' %}" alt="profile picture">
+                <img class="frame" src="{% static 'images/profile.jpg' %}" alt="profile picture">
             </div>
         </div>
     </div>
@@ -122,8 +126,8 @@
 <!-- Skills and Tools section-->
 <section class="skills-section">
     <div class="wrapper">
-        <h2>Skills and Tools</h2>
-        <h3>Things I can do</h3>
+        <h2 class="headings">Skills and Tools</h2>
+        <h3 class="headings">Things I can do</h3>
         <p>Empowering your project with a diverse arsenal of skills, tools, and cutting-edge technologies to breathe
             life into your vision.</p>
         <div class="container-icons">
@@ -190,8 +194,8 @@
 <!-- Project section-->
 <section class="projects" id="projects">
     <div class="wrapper">
-        <h2>Projects</h2>
-        <h4>A selection of things I built</h4>
+        <h2 class="headings">Projects</h2>
+        <h4 class="headings">A selection of things I built</h4>
         <div class="container-projects">
             <div class="project-text">
                 <h3>Newline Alebrije</h3>
