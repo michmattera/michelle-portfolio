@@ -2,7 +2,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.headings {  
+.headings, .sub-headings {  
     font-family: "Shantell Sans", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -12,9 +12,17 @@
       "INFM" 0,
       "SPAC" 0;
 }
-.headings {
+.headings, .sub-headings{
     color: #2B2524;
     /* background-color: #009ffe; */
+}
+.sub-headings{
+    font-size: 20px;
+    /* color: #243b4c; */
+    /* font-weight: bold; */
+}
+.center{
+    text-align: center;
 }
 body, header {
     margin: 0;
@@ -190,26 +198,9 @@ display:block ;
     border-radius: 20%;
 }
 
-
-/* .about-text-side{
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-      margin-right: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-right: 0%;
-      width: 100%;
-    }
-  } */
   .about-text-side {
-    opacity: 0; /* Start with opacity set to 0 */
-    animation: fadeIn 2s ease forwards; /* Increase duration */
+    opacity: 0; 
+    animation: fadeIn 2s ease forwards; 
 }
 
 @keyframes fadeIn {
@@ -242,10 +233,7 @@ display:block ;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* .container-icons .icons-box {
-    width: 14%; 
-    margin-bottom: 10px;
-} */
+
 .box-icon {
     font-size: 30px;
 }
@@ -259,9 +247,9 @@ display:block ;
 
 .box {
     position: relative; /* Change from absolute to relative */
-    width: 850px;
+    width: 80%;
     height: 300px;
-    margin: 50px auto; /* Adjust the margin as needed */
+    margin: 50px auto;
     background: transparent;
     border-bottom: 3px solid black;
     border-left: 3px solid black;
@@ -319,15 +307,30 @@ display:block ;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: #2B2524;
+    /* color: #2B2524; */
+    color: black;
     /* background: #001e8a; */
     padding: 2px 6px;
     border-radius: 4px;
 }
 
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.skill-image {
+    width: 20%;
+    margin: auto;
+}
 
-
+.sticker-skill {
+    height: 170px;
+    width: 70%;
+    border-left: 4px solid black;
+    /* border-bottom: 4px solid black; */
+}
 
 
 /* Project section */
