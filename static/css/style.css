@@ -14,6 +14,7 @@
 }
 .headings {
     color: #2B2524;
+    /* background-color: #009ffe; */
 }
 body, header {
     margin: 0;
@@ -223,7 +224,10 @@ display:block ;
 
 /*Skills section*/
 .skills-section{
-    background: radial-gradient(#f0f0f0, #98ACB9);
+    /* background: radial-gradient(#f0f0f0, #98ACB9); */
+    /* background: radial-gradient(#BBAA95, #bb611d); */
+    width: 100%;
+    height: 900px;
 
 }
 .wrapper {
@@ -238,12 +242,12 @@ display:block ;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.container-icons .icons-box {
-    width: 14%; /* Adjust width to accommodate 7 icons per row */
+/* .container-icons .icons-box {
+    width: 14%; 
     margin-bottom: 10px;
-}
+} */
 .box-icon {
-    font-size: 80px;
+    font-size: 30px;
 }
 .profile-img>img{
     /* border-radius: 50%; */
@@ -251,6 +255,80 @@ display:block ;
     width: 50%;
     /* background-color: black; */
 }
+
+
+.box {
+    position: relative; /* Change from absolute to relative */
+    width: 850px;
+    height: 300px;
+    margin: 50px auto; /* Adjust the margin as needed */
+    background: transparent;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    display: flex;
+}
+
+.box .skill{
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.box .skill .chart{
+    position: absolute;
+    width: 40px;
+    background: rgba(0,0,0,1);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box .skill .chart:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(0deg, #243b4c, #009ffe);
+}
+
+.box .skill .chart:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+}
+
+.box .skill .chart .percent{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #243b4c;
+    font-weight: bold;
+}
+
+.box .skill .name{
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #2B2524;
+    /* background: #001e8a; */
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+
+
+
+
 
 /* Project section */
 .projects{
