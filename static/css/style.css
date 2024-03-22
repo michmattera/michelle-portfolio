@@ -5,14 +5,19 @@ set colors::
 #4CA6C1 darker blue light
 #768E72 light green
 #243B4C dark blue green
-#A7785C
- */
 
+*/
 
+/*General Style*/
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .headings, .sub-headings {  
     font-family: "Shantell Sans", cursive;
     font-optical-sizing: auto;
@@ -54,20 +59,62 @@ section {
     margin: 0;
     /* padding: 50px 0; */
 }
-.orange{
-    color: #ff9900;
-}
 .white{
     color: #fff;
 }
 
+/*Style buttons*/
+.button-test {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #4CA6C1;
+    border: 2px solid #243B4C;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 7px 0;
+   }
+   
+.button-test span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+.button-test span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+.button-test:hover{
+    background-color: #243b4c;
+
+}
+.button-test:hover span {
+    padding-right: 15px;
+   }
+   
+.button-test:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
+
 /*landing section*/
 .landing-section {
-    height: 100vh; /* Set a fixed height */
+    height: 100vh;
     width: 100%;
     position: relative;
     background: radial-gradient(#f2f6f6, #4CA6C1);
-    /* background-color: #243b4c; */
     overflow: hidden;
     display: block;
 }
@@ -217,9 +264,9 @@ display:block ;
     flex-direction: row;
 }
 .frame{
-    width: 100%;
+    width: 70%;
     height: 80%;
-    margin: 0 5%;
+    margin: 10% 15%;
     /* border: 6px solid black; */
     border-radius: 20%;
 }
@@ -366,21 +413,34 @@ display:block ;
 }
 .container-projects{
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     -webkit-box-align: start;
+    padding-top: 5%;
+}
+.right{
+    flex-direction: row;
+}
+.left{
+    flex-direction: row-reverse;
 }
 .project-text{
     padding-top: 3%;
     padding-right: 5%;
     width: 50%;
 }
+
+.text-right{
+    padding-top: 3%;
+    padding-right: 5%;
+    width: 50%;
+    text-align: right;
+}
 .project-img {
-    height: 700px;
+    height: 400px;
     text-align: center;
     display: flex;
-    padding-top: 30px;
+    padding: 30px;
 }
 img {
     width: 100%;
