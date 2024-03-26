@@ -467,3 +467,54 @@ img {
 .box-icon-small {
     font-size: 40px;
 }
+
+/* Contact section */
+
+.contact-section{
+    /* background: radial-gradient(#f2f6f6, #4CA6C1); */
+    background-color: #93DCE3;
+    
+
+}
+.container-contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    /* border: 5px solid #243B4C; */
+    /* background-color: transparent; */
+    /* background: radial-gradient(#f2f6f6, #4CA6C1); */
+    background-color: transparent;
+
+    /* background-color: #4CA6C1; */
+    color: #f2f6f6;
+}
+.contact-form{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.contact-social{
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-social>p{
+    align-items: center;
+}
+/* #id_name{
+    height: 50px;
+    width: 300px;
+} */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

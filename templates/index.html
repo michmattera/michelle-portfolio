@@ -303,8 +303,7 @@
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/responsive-heart.png' %}"
-                    alt="portfolio project 1">
+                <img class="" src="{% static 'images/responsive-heart.png' %}" alt="portfolio project 1">
             </div>
         </div>
 
@@ -312,7 +311,8 @@
         <div class="container-projects left">
             <div class="project-text text-right">
                 <h3>HerBody</h3>
-                <p class="">This is a complete CRUD functionality project. Is an application for an only girls Gym, where the user can create a profile and then book a free private
+                <p class="">This is a complete CRUD functionality project. Is an application for an only girls Gym,
+                    where the user can create a profile and then book a free private
                     self-defense lesson, later on the user can review, edit or delete the lesson if needed.</p>
                 <div class="d-flex flex-column flex-lg-row align-items-right justify-content-end">
                     <div class="container-icons-small">
@@ -354,8 +354,7 @@
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/responsive-herbody.png' %}"
-                    alt="portfolio project 1">
+                <img class="" src="{% static 'images/responsive-herbody.png' %}" alt="portfolio project 1">
             </div>
         </div>
 
@@ -398,8 +397,7 @@
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/responsive-vet-seed.png' %}"
-                    alt="portfolio project 1">
+                <img class="" src="{% static 'images/responsive-vet-seed.png' %}" alt="portfolio project 1">
             </div>
         </div>
 
@@ -421,22 +419,23 @@
                 </div>
                 <div class="project-links">
                     <button class="button-test">
-                        <a href="https://michmattera.github.io/star-wars-quiz/" aria-label="Live Demo Star wars quiz Project" target="_blank" rel="noopener"
+                        <a href="https://michmattera.github.io/star-wars-quiz/"
+                            aria-label="Live Demo Star wars quiz Project" target="_blank" rel="noopener"
                             title="Link for Live Demo Star wars quiz Project (opens in a new page)">
                             <span class="small">Live Demo</span>
                         </a>
                     </button>
                     <button class="button-test">
-                        <a href="https://github.com/michmattera/star-wars-quiz" aria-label="Github Repository Star wars quiz Project"
-                            target="_blank" rel="noopener" title="Link for GitHub Repository (opens in a new page)">
+                        <a href="https://github.com/michmattera/star-wars-quiz"
+                            aria-label="Github Repository Star wars quiz Project" target="_blank" rel="noopener"
+                            title="Link for GitHub Repository (opens in a new page)">
                             <span class="small">Github Repo</span>
                         </a>
                     </button>
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/responsive-star-wars.png' %}"
-                    alt="portfolio project 1">
+                <img class="" src="{% static 'images/responsive-star-wars.png' %}" alt="portfolio project 1">
             </div>
         </div>
 
@@ -456,22 +455,23 @@
                 </div>
                 <div class="project-links">
                     <button class="button-test">
-                        <a href="https://michmattera.github.io/newline-alebrije/" aria-label="Live Demo Newline Alebrije Project" target="_blank" rel="noopener"
+                        <a href="https://michmattera.github.io/newline-alebrije/"
+                            aria-label="Live Demo Newline Alebrije Project" target="_blank" rel="noopener"
                             title="Link for Live Demo Newline Alebrije Project (opens in a new page)">
                             <span class="small">Live Demo</span>
                         </a>
                     </button>
                     <button class="button-test">
-                        <a href="https://github.com/michmattera/newline-alebrije" aria-label="Github Repository Newline alebrije Project"
-                            target="_blank" rel="noopener" title="Link for GitHub Repository (opens in a new page)">
+                        <a href="https://github.com/michmattera/newline-alebrije"
+                            aria-label="Github Repository Newline alebrije Project" target="_blank" rel="noopener"
+                            title="Link for GitHub Repository (opens in a new page)">
                             <span class="small">Github Repo</span>
                         </a>
                     </button>
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/alebrije_responsive.png' %}"
-                    alt="portfolio project 1">
+                <img class="" src="{% static 'images/alebrije_responsive.png' %}" alt="portfolio project 1">
             </div>
         </div>
 
@@ -489,13 +489,35 @@
 <!-- Contact section -->
 <section class="contact-section" id="contact-section">
     <div class="wrapper">
-        <h2>Contact</h2>
-        <h4>Get in touch!</h4>
-        <form action="" method="post">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" value="Submit">
-         </form>
+        <h2 class="headings center">Contact</h2>
+        <fieldset>
+        <h4 class="sub-headings center">Get in touch!</h4>
+        <div class="container-contact">
+            <div class="contact-form">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="contact-social">
+                <p class="">Social links</p>
+                <div class="container-icons-small">
+                    <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
+                    <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
+                        href="https://www.linkedin.com/in/michelle-mattera-a5283019b/" target="_blank" rel="noopener"
+                        title="Link for Linkedin (opens in a new page)"><img class="app-badge"
+                            src="{% static 'images/linkedin.icon.svg' %}" alt="linkedin icon" /></a>
+                    <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Github" href="https://github.com/michmattera"
+                        target="_blank" rel="noopener" title="Link for Github (opens in a new page)"><img
+                            class="app-badge" src="{% static 'images/github.icon.svg' %}" alt="github icon" /></a>
+                    <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Email" href="" target="_blank" rel="noopener"
+                        title="Link for Email (opens in a new page)"><img class="app-badge"
+                            src="{% static 'images/email.icon.svg' %}" alt="email icon" /></a>
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
