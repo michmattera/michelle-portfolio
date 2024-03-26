@@ -3,12 +3,8 @@ from .forms import ContactForm
 
 def Home(request):
     """
-    Home Page
+    Home Page with Contact Form
     """
-    return render(request, "index.html")
-
-
-def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -16,8 +12,9 @@ def contact_view(request):
             return redirect('success')
     else:
         form = ContactForm()
+
     context = {'form': form}
-    return render(request, 'contact.html', context)
+    return render(request, "index.html", context)
 
 
 

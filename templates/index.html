@@ -82,11 +82,11 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
         <polygon points="0 0 100 10 0 10" fill="#f2f6f6" />
     </svg>
-    <img src="static/images/sticker-eye.webp" alt="Small object" class="small-object">
+    <img src="static/images/sticker-eye.webp" alt="Small object" class="small-object-right">
 </div>
 
 <!-- Skills and Tools section-->
-<section class="skills-section">
+<section class="skills-section" id="skills-section">
     <div class="wrapper">
         <h2 class="headings center">Skills and Tools</h2>
         <h3 class="sub-headings center">Things I can do</h3>
@@ -215,12 +215,12 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
         <polygon points="100 0 100 10 0 10" fill="#93DCE3" />
     </svg>
-    <!-- <img src="static/images/sticker-eye.webp" alt="Small object" class="small-object"> -->
+    <img src="static/images/sticker-okay.webp" alt="Small object" class="small-object-left">
 </div>
 
 
 <!-- About section-->
-<section class="about-section">
+<section class="about-section" id="about-section">
     <div class="wrapper">
         <div class="about-container">
             <div class="about-text-side" id="about-text">
@@ -259,12 +259,12 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
         <polygon points="0 0 100 10 0 10" fill="#f2f6f6" />
     </svg>
-    <img src="static/images/sticker-eye.webp" alt="Small object" class="small-object">
+    <img src="static/images/sticker-good.png" alt="Small object" class="small-object-right">
 </div>
 
 
 <!-- Project section-->
-<section class="projects" id="projects">
+<section class="projects" id="projects-section">
     <div class="wrapper">
         <h2 class="headings center">Projects</h2>
         <h4 class="headings center">A selection of things I built</h4>
@@ -303,7 +303,7 @@
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/screenshot-am-I-responsive-alebrije.png' %}"
+                <img class="" src="{% static 'images/responsive-heart.png' %}"
                     alt="portfolio project 1">
             </div>
         </div>
@@ -312,8 +312,8 @@
         <div class="container-projects left">
             <div class="project-text text-right">
                 <h3>HerBody</h3>
-                <p class="">An only girls Gym, where the user can create a profile and then book a free private
-                    self-defense lesson.</p>
+                <p class="">This is a complete CRUD functionality project. Is an application for an only girls Gym, where the user can create a profile and then book a free private
+                    self-defense lesson, later on the user can review, edit or delete the lesson if needed.</p>
                 <div class="d-flex flex-column flex-lg-row align-items-right justify-content-end">
                     <div class="container-icons-small">
                         <i class="box-icon-small devicon-html5-plain"></i>
@@ -354,7 +354,7 @@
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/alebrije_responsive.png' %}"
+                <img class="" src="{% static 'images/responsive-herbody.png' %}"
                     alt="portfolio project 1">
             </div>
         </div>
@@ -364,12 +364,11 @@
             <div class="project-text">
                 <h3>VetSeed</h3>
                 <p class="">This is a back-end program for veterinarians to do the following:</p>
-                <ul>
+                <ul class="list">
                     <li>Calcolate and save data of dogs.</li>
                     <li>Calcolate if the dog is underweight, overweight or in ideal weight.</li>
                     <li>Calcolate as well calories per day that dog should take based on weight and life stage.</li>
                     <li>Get general information about dogs.</li>
-                    <li>Be able to save and have summary of all dogs inserted.</li>
                     <li>Be able to save more dogs and have them display all together.</li>
                 </ul>
                 <div class="d-flex flex-column flex-lg-row align-items-center">
@@ -399,16 +398,12 @@
                 </div>
             </div>
             <div class="project-img">
-                <img class="" src="{% static 'images/screenshot-am-I-responsive-alebrije.png' %}"
+                <img class="" src="{% static 'images/responsive-vet-seed.png' %}"
                     alt="portfolio project 1">
             </div>
         </div>
 
         <div class="container-projects left">
-            <div class="project-img">
-                <img class="" src="{% static 'images/screenshot-am-I-responsive-alebrije.png' %}"
-                    alt="portfolio project 1">
-            </div>
             <div class="project-text text-right">
                 <h3>Star Wars Quiz</h3>
                 <p class="">This is a fun and interactive quiz for all Star Wars fans. It tests all star wars fans for
@@ -438,6 +433,10 @@
                         </a>
                     </button>
                 </div>
+            </div>
+            <div class="project-img">
+                <img class="" src="{% static 'images/responsive-star-wars.png' %}"
+                    alt="portfolio project 1">
             </div>
         </div>
 
@@ -478,6 +477,28 @@
 
     </div>
 </section>
+
+<!-- Div to separate sections -->
+<div class="border-div">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="100 0 100 10 0 10" fill="#93DCE3" />
+    </svg>
+    <img src="static/images/sticker-okay.webp" alt="Small object" class="small-object-left">
+</div>
+
+<!-- Contact section -->
+<section class="contact-section" id="contact-section">
+    <div class="wrapper">
+        <h2>Contact</h2>
+        <h4>Get in touch!</h4>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+         </form>
+    </div>
+</section>
+
 
 
 {% endblock %}
