@@ -67,9 +67,6 @@ section {
 .button-test {
     display: inline-block;
     border-radius: 4px;
-    background-color: #4CA6C1;
-    border: 2px solid #243B4C;
-    color: #FFFFFF;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
@@ -79,7 +76,16 @@ section {
     cursor: pointer;
     margin: 7px 0;
    }
-   
+   .inverted-color{
+    background-color: #243B4C !important;
+    color: #FFFFFF !important;
+    border: none !important;
+   }
+   .button-test{
+    background-color: #4CA6C1;
+    border: 2px solid #243B4C;
+    color: #FFFFFF;
+   }
 .button-test span {
     cursor: pointer;
     display: inline-block;
@@ -98,6 +104,9 @@ section {
 .button-test:hover{
     background-color: #243b4c;
 
+}
+.submit-button:hover{
+    background-color: #4CA6C1;
 }
 .button-test:hover span {
     padding-right: 15px;
@@ -498,11 +507,25 @@ img {
 }
 .contact-social{
     width: 50%;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .contact-social>p{
     align-items: center;
+}
+.container-text-sticker{
+    height: 60%;
+    align-items: center;
+    align-content: center;
+}
+.container-icons-small{
+    height: 40%;
+}
+.contact-sticker{
+    height: 50%;
+    width: 30%;
+    text-align: center !important;
 }
 /* #id_name{
     height: 50px;
@@ -528,5 +551,15 @@ textarea {
     height: 200px; /* Adjust height as needed */
     resize: vertical; /* Allow vertical resizing */
     border: 2px solid #243b4c !important;
+}
+.container-icons-small {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.submit-button{
+
 }
 

@@ -491,33 +491,40 @@
     <div class="wrapper">
         <h2 class="headings center">Contact</h2>
         <fieldset>
-        <h4 class="sub-headings center">Get in touch!</h4>
-        <div class="container-contact">
-            <div class="contact-form">
-                <form action="" method="post">
-                    {% csrf_token %}
-                    {{ form }}
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            <div class="contact-social">
-                <p class="">Social links</p>
-                <div class="container-icons-small">
-                    <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="small-animation">
-                    <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
-                        href="https://www.linkedin.com/in/michelle-mattera-a5283019b/" target="_blank" rel="noopener"
-                        title="Link for Linkedin (opens in a new page)"><img class="app-badge"
-                            src="{% static 'images/linkedin.icon.svg' %}" alt="linkedin icon" /></a>
-                    <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Github" href="https://github.com/michmattera"
-                        target="_blank" rel="noopener" title="Link for Github (opens in a new page)"><img
-                            class="app-badge" src="{% static 'images/github.icon.svg' %}" alt="github icon" /></a>
-                    <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Email" href="" target="_blank" rel="noopener"
-                        title="Link for Email (opens in a new page)"><img class="app-badge"
-                            src="{% static 'images/email.icon.svg' %}" alt="email icon" /></a>
+            <h4 class="sub-headings center">Get in touch!</h4>
+            <div class="container-contact">
+                <div class="contact-form">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <!-- <input type="submit" value="Submit" class="submit-button"> -->
+                        <button type="submit" value="Submit" class="button-test inverted-color">
+                            <span class="small">Send Mail</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-social">
+                    <div class="container-text-sticker">
+                        <img src="{% static 'images/sticker.webp' %}" alt="email icon" class="contact-sticker">
+                        <p class="center">Dropping a line to say hello, asking for my availability or discuss potential collaborations?
+                            I'd love to hear from you!</p>
+                        <p class="center">Fill in your info in the form and I look forward to hearing from you!</p>
+                    </div>
+                    <div class="container-icons-small">
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
+                            href="https://www.linkedin.com/in/michelle-mattera-a5283019b/" target="_blank"
+                            rel="noopener" title="Link for Linkedin (opens in a new page)"><img class="app-badge"
+                                src="{% static 'images/linkedin.icon.svg' %}" alt="linkedin icon" /></a>
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Github" href="https://github.com/michmattera"
+                            target="_blank" rel="noopener" title="Link for Github (opens in a new page)"><img
+                                class="app-badge" src="{% static 'images/github.icon.svg' %}" alt="github icon" /></a>
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Email" href="" target="_blank" rel="noopener"
+                            title="Link for Email (opens in a new page)"><img class="app-badge"
+                                src="{% static 'images/email.icon.svg' %}" alt="email icon" /></a>
 
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 </section>
 
