@@ -28,16 +28,29 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
+ALLOWED_HOSTS = ['/', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'your_email@gmail.com'
+# EMAIL_HOST_PASSWORD = 'your_email_password'
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your_email@gmail.com'
-EMAIL_HOST_PASSWORD = 'your_email_password'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-michmattera-michellepor-6kj5vdfmthx.ws-us108.gitpod.io']
+# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+# EMAIL_PORT = '2525'
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
