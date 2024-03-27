@@ -487,7 +487,7 @@ img {
     background-color: transparent;
 
     /* background-color: #4CA6C1; */
-    color: #f2f6f6;
+    color: #243B4C;
 }
 .contact-form{
     width: 50%;
@@ -513,8 +513,20 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #243b4c;
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+/* Additional styles for specific inputs */
+input[type="text"],
+input[type="email"] {
+    height: 40px; /* Adjust height as needed */
+}
+
+textarea {
+    height: 200px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing */
+    border: 2px solid #243b4c !important;
+}
+
