@@ -471,7 +471,7 @@ img {
     width: 100%;
     height: 100%;
     display: flex;
-    text-align: left;
+    /* text-align: left; */
 }
 .box-icon-small {
     font-size: 40px;
@@ -515,17 +515,42 @@ img {
     align-items: center;
 }
 .container-text-sticker{
-    height: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
 }
 .container-icons-small{
-    height: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
 }
-.contact-sticker{
-    height: 50%;
+.contact-social-icon{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.contact-sticker {
+    height: 70%;
     width: 30%;
-    text-align: center !important;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-text{
+    font-size: 18px;
+    /* font-style: italic; */
+    font-weight: 600;
+    padding: 10% 5% 0 5%;
+    line-height: 200%;
 }
 /* #id_name{
     height: 50px;
@@ -553,13 +578,21 @@ textarea {
     border: 2px solid #243b4c !important;
 }
 .container-icons-small {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Icons evenly spaced */
+    padding: 0 20px; /* Adjust padding for spacing between icons */
+}
+.container-icons-small-small{
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 3%;
 }
-.submit-button{
 
-}
 
