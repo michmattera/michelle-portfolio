@@ -494,7 +494,7 @@
             <h4 class="sub-headings center">Get in touch!</h4>
             <div class="container-contact">
                 <div class="contact-form">
-                    <form action="" method="post">
+                    <form action="{% url 'home' %}"  method="post">
                         {% csrf_token %}
                         {{ form }}
                         <!-- <input type="submit" value="Submit" class="submit-button"> -->
