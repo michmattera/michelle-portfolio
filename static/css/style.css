@@ -130,11 +130,16 @@ section {
 
 .index-1{
     z-index: 1;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    text-align: center;
+
 }
 .index-2{
     z-index: 2;
+    position: absolute;
 }
 .landing-container{
+    position: relative;
     display: flex;
     height: 100%;
     width: 80%;
@@ -143,7 +148,7 @@ section {
     justify-content: center;
     flex-direction: row;
 }
-.test{
+.sticker{
     position:absolute ;
     width:100%;
     height:100%;
@@ -151,7 +156,7 @@ section {
     left:0;
     z-index: 1;
 }
-.test div{
+.sticker div{
 position:absolute ;
 display:block ;
 }
@@ -159,33 +164,33 @@ display:block ;
     width: 55px;
     height: 55px;
 } 
-.test div:nth-child(1){
+.sticker div:nth-child(1){
     left:20%; 
     animation:fall 15s linear infinite ;
     animation-delay:-2s;
 
 }
-.test div:nth-child(2){
+.sticker div:nth-child(2){
     left:70%; 
     animation:fall 15s linear infinite ;
     animation-delay:-4s;
 }
-.test div:nth-child(3){
+.sticker div:nth-child(3){
     left:40%; 
     animation:fall 20s linear infinite ;
     animation-delay:-7s;
 }
-.test div:nth-child(4){
+.sticker div:nth-child(4){
     left:50%; 
    animation:fall 18s linear infinite ; 
    animation-delay:-5s;
 }
-.test div:nth-child(5){
+.sticker div:nth-child(5){
     left:85%; 
     animation:fall 14s linear infinite ;
     animation-delay:-5s;
 }
-.test div:nth-child(6){
+.sticker div:nth-child(6){
     left:15%; 
     animation:fall 16s linear infinite ;
     animation-delay:-10s;
@@ -219,7 +224,7 @@ display:block ;
         transform:translateX (-20px) rotate(225deg);
     }
     }
-.test1{
+.sticker-reverse{
     transform: rotateX(180deg);
 }
 

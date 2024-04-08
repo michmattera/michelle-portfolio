@@ -8,39 +8,10 @@
 <!-- Mashead header-->
 <header class="header">
     <section class="landing-section">
-        <div class="landing-container">
-            <div class="col-lg-6 order-lg-2">
-                <!-- Picture -->
-                <div class="profile-img">
-                    <img class="" src="{% static 'images/sticker_standing-transp.gif' %}" alt="profile picture">
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1">
-                <!-- Mashead text and app badges-->
-                <div class="mb-5 mb-lg-0 text-center text-lg-start index-1">
-                    <p>Hello! 👋 My name is</p>
-                    <h1 class="headings">Michelle Mattera</h1>
-                    <p><span id="headline"></span></p>
-                    <div class="d-flex flex-column flex-lg-row align-items-center">
-                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
-                            href="https://www.linkedin.com/in/michelle-mattera-a5283019b/" target="_blank"
-                            rel="noopener" title="Link for Linkedin (opens in a new page)"><img class="app-badge"
-                                src="{% static 'images/linkedin.icon.svg' %}" alt="linkedin icon" /></a>
-                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Github" href="https://github.com/michmattera"
-                            target="_blank" rel="noopener" title="Link for Github (opens in a new page)"><img
-                                class="app-badge" src="{% static 'images/github.icon.svg' %}" alt="github icon" /></a>
-                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Email" href="" target="_blank" rel="noopener"
-                            title="Link for Email (opens in a new page)"><img class="app-badge"
-                                src="{% static 'images/email.icon.svg' %}" alt="email icon" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- sticker section-->
-        <!-- <section class="test-section"> -->
-        <div class="test">
-            <div class="index-2">
+        <div class="sticker index-2">
+            <div class="">
                 <img src="{% static 'images/sticker-okay.webp' %}" alt="email icon" class="small-animation">
             </div>
             <div>
@@ -57,7 +28,7 @@
             </div>
         </div>
         <!-- New set of div elements -->
-        <div class="test test1">
+        <div class="sticker sticker-reverse">
             <div>
                 <img src="{% static 'images/sticker-okay.webp' %}" alt="email icon" class="small-animation reverse">
             </div>
@@ -72,6 +43,35 @@
             </div>
             <div>
                 <img src="{% static 'images/sticker_dancing.webp' %}" alt="email icon" class="small-animation reverse">
+            </div>
+        </div>
+
+        <div class="landing-container">
+            <div class="col-lg-6 order-lg-2">
+                <!-- Picture -->
+                <div class="profile-img">
+                    <img class="" src="{% static 'images/sticker_standing-transp.gif' %}" alt="profile picture">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 index-1">
+                <!-- Mashead text and app badges-->
+                <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                    <p>Hello! 👋 My name is</p>
+                    <h1 class="headings">Michelle Mattera</h1>
+                    <p><span id="headline"></span></p>
+                    <div class="d-flex flex-column flex-lg-row align-items-center">
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Linkedin"
+                            href="https://www.linkedin.com/in/michelle-mattera-a5283019b/" target="_blank"
+                            rel="noopener" title="Link for Linkedin (opens in a new page)"><img class="app-badge"
+                                src="{% static 'images/linkedin.icon.svg' %}" alt="linkedin icon" /></a>
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Github" href="https://github.com/michmattera"
+                            target="_blank" rel="noopener" title="Link for Github (opens in a new page)"><img
+                                class="app-badge" src="{% static 'images/github.icon.svg' %}" alt="github icon" /></a>
+                        <a class="me-lg-3 mb-4 mb-lg-0 white" aria-label="Email" href="" target="_blank" rel="noopener"
+                            title="Link for Email (opens in a new page)"><img class="app-badge"
+                                src="{% static 'images/email.icon.svg' %}" alt="email icon" /></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
