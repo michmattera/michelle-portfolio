@@ -264,9 +264,13 @@ img.small-object-left {
     transform: translateY(-10%); /* Center vertically */
     z-index: 1; /* Ensure image is above the SVG */
 }
+
+
+
 /*About section*/
 .about-section {
     position: relative;
+    overflow: hidden;
     height: 650px;
     top: 0; /* Start right after the landing section */
     /* background-color: #f0f0f0; */
@@ -286,15 +290,30 @@ img.small-object-left {
     width: 45%;
     flex-direction: row;
 }
-.frame{
+
+.frame {
     width: 70%;
     height: 80%;
     margin: 10% 15%;
-    /* border: 6px solid black; */
     border-radius: 20%;
+    opacity: 0; /* Initially hide the image */
+    transition: opacity 1s ease; /* Smooth transition effect */
 }
 
-  .about-text-side {
+.visible {
+    opacity: 1;
+}
+
+.enter-animation {
+    opacity: 0;
+    transition: opacity 4s ease; /* Adjust the duration here */
+}
+
+.enter-animation.visible {
+    opacity: 1;
+}
+
+.about-text-side {
     opacity: 0; 
     animation: fadeIn 2s ease forwards; 
 }

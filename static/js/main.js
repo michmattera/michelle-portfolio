@@ -14,6 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.enter-animation');
+
+    function checkPosition() {
+        images.forEach(image => {
+            const windowHeight = window.innerHeight;
+            const triggerBottom = image.getBoundingClientRect().top + (image.clientHeight / 2);
+
+            if (triggerBottom < windowHeight) {
+                image.classList.add('visible');
+            }
+        });
+    }
+
+    checkPosition();
+    window.addEventListener('scroll', checkPosition);
+});
+
+
 
 
 
