@@ -619,4 +619,43 @@ textarea {
     padding: 3%;
 }
 
+/* media query for screen size 1025 */
+@media (max-width: 1025px) {
+    /* landing section */
+    .profile-img>img {
+        height: 350px;
+        width: 80%;
+    }
+    .landing-container {
+        height: auto;
+    }
+    .landing-section {
+        height: 650px;
+    }
+    /* about section */
+
+    .wrapper {
+        padding: 0 2%;
+    }
+    p, .list {
+        font-size: 13px;
+    }
+    .frame {
+        width: 90%;
+        margin: 10% 5%;
+    }
+    /* projects section */
+    .container-projects {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .project-text {
+        padding-left: 5%;
+    }
+    .text-right {
+        padding-right: 5%;
+    }
+
+}
+
 
