@@ -655,7 +655,101 @@ textarea {
     .text-right {
         padding-right: 5%;
     }
-
+    .container-icons-small-small {
+        padding: 0;
+    }
 }
+/* media query for screen size 992px */
+@media (max-width: 992px) {
+    /* landing section */
+    .landing-container{
+        height: 75vh;
+    }
+    /* skills section */
+    .name {
+        font-size: 14px;
+    }
+    /* about section */
+    .about-container {
+        justify-content: space-around;
+    }
+    /* contact section */
+    .space-evenly {
+        justify-content: space-evenly !important; 
+    }
+    .container-icons-small-small {
+        flex-direction: column;
+    }
+    .contact-text {
+        font-size: 15px;
+    }
+    .contact-sticker {
+        width: 40%;
+        margin: 0 5%;
+    }
+    /* project section */
+    .text-right {
+        width: 40%;
+    }
+    .project-text {
+        padding-right: 0;
+        width: 40%;
+    }
+}
+/* media query for screen size 810px */
+@media (max-width: 810px) {
+    /* general section */
+    aside, section {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+    /* skills section */
+    .skills-container{
+        flex-direction: column;
+    }
+    .box {
+        position: relative;
+        width: 95%;
+        height: 250px;
+        margin: 50px auto;
+    }
+    /* about section */
+    .frame {
+        width: 90%;
+        margin: 25% 5%;
+        height: 400px;
+    }
+    .about-text-side, .about-img-side {
+        width: 50%;
+    }
+    .about-text-side{
+        padding: 0 0 0 2%;
+    }
+    .about-text{
+        margin: 0;
+    }
+}
+/* media query for screen size 768px */
+@media (max-width: 768px) {
+    /* landing section */
+    .landing-container {
+        height: 100%;
+    }
+    /* project section */
+    .project-text {
+        padding: 0;
+        width: 50%;
+    }
+    img {
+        height: 80%;
+    }
+    .container-projects {
+        padding-top: 1%;
+    }
+    .box-icon-small {
+        font-size: 30px;
+    }
+}
+
 
 
