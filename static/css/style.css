@@ -119,6 +119,10 @@ section {
 
 
 /*landing section*/
+.logo {
+    height: 50px;
+    width: 100%;
+}
 .landing-section {
     height: 100vh;
     width: 100%;
@@ -699,13 +703,20 @@ textarea {
 /* media query for screen size 810px */
 @media (max-width: 810px) {
     /* general section */
-    aside, section {
+    section {
         padding-top: 2rem;
         padding-bottom: 5rem;
     }
     /* skills section */
     .skills-container{
         flex-direction: column;
+    }
+    .sticker-skill {
+        height: 130px;
+        width: 100%;
+    }
+    .container-icons-small-small {
+        justify-content: center;
     }
     .box {
         position: relative;
@@ -734,6 +745,10 @@ textarea {
     /* landing section */
     .landing-container {
         height: 100%;
+    }
+    /* skills section */
+    .skills-section {
+        height: 750px;
     }
     /* project section */
     .project-text {
