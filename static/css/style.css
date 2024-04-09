@@ -704,8 +704,8 @@ textarea {
 @media (max-width: 810px) {
     /* general section */
     section {
-        padding-top: 2rem;
-        padding-bottom: 5rem;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
     }
     /* skills section */
     .skills-container{
@@ -750,6 +750,9 @@ textarea {
     .skills-section {
         height: 750px;
     }
+    .sticker-skill {
+        padding-top: 10%;
+    }
     /* project section */
     .project-text {
         padding: 0;
@@ -763,6 +766,108 @@ textarea {
     }
     .box-icon-small {
         font-size: 30px;
+    }
+    /* contact section */
+    .contact-sticker {
+        height: 60%;
+    }
+}
+/* media query for screen size 412px */
+@media (max-width: 412px) {
+    /* landing section */
+    .headings, .sub-headings {
+        text-align: center;
+    }
+    .landing-container {
+        height: 100%;
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
+    .profile-img>img {
+        height: 300px;
+        width: 90%;
+    }
+    .landing-section {
+        height: 550px;
+    }
+    .small-animation {
+        width: 35px;
+        height: 35px;
+    }
+    /* skills section */
+    .box {
+        width: 95%;
+        height: 250px;
+        margin: 20px auto;
+    }
+    .box .skill .chart {
+        width: 25px;
+        left: 50%;
+    }
+    .box .skill .chart .percent {
+        font-weight: normal;
+    }
+    .box .skill .name {
+        bottom: -60px;
+        left: 50%;
+        padding: 2px 6px;
+    }
+    .name {
+        font-size: 8px;
+    }
+    .box-icon {
+        font-size: 24px;
+    }
+    .skills-section {
+        height: 650px;
+    }
+    img.small-object-left, img.small-object-right {
+        height: 80px;
+        width: 85px;
+    }
+    .sticker-skill {
+        height: 90px;
+        width: 100%;
+    }
+    /* about section */
+    .frame {
+        margin: 5%;
+        height: 250px;
+    }
+    .about-container {
+        flex-direction: column-reverse;
+    }
+    .about-text-side {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .about-img-side {
+        width: 70%;
+        margin: 0 15%;
+        height: 300px;
+    }
+    .about-section {
+        height: 850px;
+    }
+    /* project section */
+    .container-projects {
+        flex-direction: column !important;
+    }
+    .project-text, .project-img {
+        width: 100%;
+    }
+    .project-name{
+        padding-top: 0;
+        font-size: 18px;
+    }
+    .project-name, .project-info {
+        text-align: center;
+    }
+    .justify-center {
+    justify-content: center;
+    }
+    .project-links{
+        text-align: center !important;
     }
 }
 
