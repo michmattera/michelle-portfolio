@@ -884,6 +884,37 @@ textarea {
         padding-top: 10%;
     }
 
+    .box .skill .chart {
+        width: 25px;
+        left: 50%;
+    }
+
+    .box .skill .chart .percent {
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .box .skill .name {
+        bottom: -50px;
+        left: 50%;
+        padding: 2px 6px;
+    }
+
+    .name {
+        font-size: 9px;
+    }
+
+    .box-icon {
+        font-size: 28px;
+    }
+
+    img.small-object-left,
+    img.small-object-right {
+        height: 80px;
+        width: 85px;
+    }
+
+
     /* project section */
     .project-text {
         padding: 0;
@@ -908,8 +939,8 @@ textarea {
     }
 }
 
-/* media query for screen size 412px */
-@media (max-width: 412px) {
+/* media query for screen size 415px */
+@media (max-width: 415px) {
 
     /* landing section */
     .headings,
@@ -1076,5 +1107,63 @@ textarea {
     .contact-text {
         padding: 0 5% 5%;
         line-height: 150%;
+    }
+}
+
+/* media query for screen size 390px */
+@media (max-width: 390px) {
+    /* landing section */
+    .landing-container {
+        flex-direction: column-reverse;
+    }
+    .profile-img>img {
+        height: 150px;
+        width: 50%;
+        margin: 0 25%;
+    }
+    .landing-container {
+        margin: 0;
+    }
+    .landing-section {
+        height: 620px;
+    }
+    .p-landing{
+        padding-top: 30%;
+    }
+    /* skills section */
+    .name {
+        font-size: 6.5px;
+    }
+    /* about section */
+    .about-section {
+        height: 950px;
+    }
+    .project-img {
+        height: 300px;
+    }
+}
+
+/* media query for screen size 320px */
+@media (max-width: 320px) {
+    /* landing section */
+    .small-animation {
+        width: 30px;
+        height: 30px;
+    }
+    /* about section */
+    .about-section {
+        height: 990px;
+    }
+    .project-img {
+        height: 300px;
+    }
+    .about-img-side {
+        width: 70%;
+        margin: 0 15%;
+        height: 220px;
+    }
+    .frame {
+        margin: 3%;
+        height: 200px;
     }
 }
