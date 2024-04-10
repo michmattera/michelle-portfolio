@@ -143,6 +143,25 @@ section {
 }
 
 
+/*success page*/
+.success{
+    width: 95%;
+    padding: 5% 0;
+    margin: 5% 2.5% 2.5% 2.5%;
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+}
+.success-container-sticker {
+    width: 10%;
+    margin: 2% 45%;
+    height: 140px;
+}
+.success-sticker{
+    height: 100%;
+    width: 100%;
+}
+
 /*landing section*/
 .logo {
     height: 50px;
@@ -350,9 +369,9 @@ img.small-object-left {
 }
 
 .frame {
-    width: 70%;
-    height: 80%;
-    margin: 10% 15%;
+    width: 80%;
+    height: 85%;
+    margin: 0 15%;
     border-radius: 20%;
     opacity: 0;
     /* Initially hide the image */
@@ -719,7 +738,11 @@ textarea {
 
 /* media query for screen size 1025 */
 @media (max-width: 1025px) {
-
+    /* success section */
+    .success {
+        padding: 10% 0;
+        height: 60vh;
+    }
     /* landing section */
     .profile-img>img {
         height: 350px;
@@ -746,8 +769,7 @@ textarea {
     }
 
     .frame {
-        width: 90%;
-        margin: 10% 5%;
+        margin: 0 5%;
     }
 
     /* projects section */
@@ -775,6 +797,10 @@ textarea {
     /* landing section */
     .landing-container {
         height: 75vh;
+    }
+    .success-container-sticker {
+        width: 20%;
+        margin: 2% 40%;
     }
 
     /* skills section */
@@ -818,6 +844,11 @@ textarea {
 
 /* media query for screen size 810px */
 @media (max-width: 810px) {
+    /* success section */
+    .success {
+        padding: 10% 0;
+        height: 70vh;
+    }
 
     /* general section */
     section {
@@ -849,8 +880,8 @@ textarea {
     /* about section */
     .frame {
         width: 90%;
-        margin: 25% 5%;
-        height: 400px;
+        margin: 0 0 0 5%;
+        height: 350px;
     }
 
     .about-text-side,
@@ -869,6 +900,10 @@ textarea {
 
 /* media query for screen size 768px */
 @media (max-width: 768px) {
+    /* success section */
+    .success {
+        padding: 15% 0;
+    }
 
     /* landing section */
     .landing-container {
@@ -913,7 +948,33 @@ textarea {
         height: 80px;
         width: 85px;
     }
+    /* about section */
+    .frame {
+        width: 50%;
+        margin: 5% 25%;
+        height: 250px;
+    }
+    .about-section {
+        height: 750px;
+    }
+    .about-title{
+        text-align: center;
+    }
 
+    .about-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-text-side {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .about-img-side {
+        width: 70%;
+        margin: 0 15%;
+        height: 300px;
+    }
 
     /* project section */
     .project-text {
@@ -939,9 +1000,26 @@ textarea {
     }
 }
 
+/* media query for screen size 600px */
+@media (max-width: 600px) {
+    /* about section */
+    .frame {
+        width: 70%;
+        margin: 5% 15%;
+        height: 250px;
+    }
+}
 /* media query for screen size 415px */
 @media (max-width: 415px) {
-
+    /* success section */
+    .success {
+        padding: 40% 0;
+    }
+    .success-container-sticker {
+        width: 30%;
+        margin: 2% 35%;
+        height: 110px;
+    }
     /* landing section */
     .headings,
     .sub-headings {
@@ -1022,6 +1100,7 @@ textarea {
 
     /* about section */
     .frame {
+        width: 90%;
         margin: 5%;
         height: 250px;
     }
