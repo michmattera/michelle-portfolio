@@ -494,11 +494,10 @@
             <h4 class="sub-headings center">Get in touch!</h4>
             <div class="container-contact">
                 <div class="contact-form">
-                    <form action="{% url 'home' %}"  method="post">
+                    <form id="contact-form" method="post" onsubmit="sendEmail()">
                         {% csrf_token %}
                         {{ form }}
-                        <!-- <input type="submit" value="Submit" class="submit-button"> -->
-                        <button type="submit" value="Submit" class="button-test inverted-color">
+                        <button type="submit" class="button-test inverted-color">
                             <span class="small">Send Mail</span>
                         </button>
                     </form>
