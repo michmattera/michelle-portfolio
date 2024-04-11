@@ -841,7 +841,16 @@ textarea {
         width: 40%;
     }
 }
-
+/* media query for screen size 854px */
+@media (max-width: 854px) {
+    /* landing section */
+    .landing-section {
+        height: 550px;
+    }
+    .landing-container {
+        height: 100%;
+    }
+}
 /* media query for screen size 810px */
 @media (max-width: 810px) {
     /* success section */
@@ -1222,12 +1231,16 @@ textarea {
     }
 }
 
-/* media query for screen size 320px */
-@media (max-width: 320px) {
+/* media query for screen size 325px */
+@media (max-width: 325px) {
     /* landing section */
     .small-animation {
         width: 30px;
         height: 30px;
+    }
+    /* skills section */
+    .box .skill .chart {
+        width: 18px;
     }
     /* about section */
     .about-section {
@@ -1244,5 +1257,22 @@ textarea {
     .frame {
         margin: 3%;
         height: 200px;
+    }
+}
+/* media query for screen size 281px */
+@media (max-width: 281px) {
+    /* landing section */
+    .container-nav{
+        flex-wrap: nowrap !important;
+    }
+    .logo {
+        height: 35px;
+    }
+    /* skill section */
+    .name {
+        font-size: 5.5px;
+    }
+    .box-icon {
+        font-size: 18px;
     }
 }
