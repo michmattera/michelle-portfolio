@@ -86,38 +86,37 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="{% static 'js/main.js' %}"></script>
-    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+    <!-- <script src="{% static 'js/main.js' %}"></script> -->
+    <script src="{% static 'js/main.js' %}" type="module"></script>
+
+    <script>
+        // Initialize EmailJS with your service ID
+        emailjs.init("rC5p80HkuOYYvJy0W");
+    
+        // Function to send email when the contact form is submitted
+        function sendEmail() {
+            // Retrieve values from the contact form
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+    
+            // Set up the template parameters with the form values
+            var templateParams = {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            };
+    
+            // Send email using EmailJS
+            emailjs.send('service_mb7svba', 'template_lhd31t3', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+        }
+    </script>    
 </body>
-
-<script>
-    // Initialize EmailJS with your service ID
-    emailjs.init("rC5p80HkuOYYvJy0W");
-
-    // Function to send email when the contact form is submitted
-    function sendEmail() {
-        // Retrieve values from the contact form
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('message').value;
-
-        // Set up the template parameters with the form values
-        var templateParams = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
-
-        // Send email using EmailJS
-        emailjs.send('service_mb7svba', 'template_lhd31t3', templateParams)
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-            }, function (error) {
-                console.log('FAILED...', error);
-            });
-    }
-</script>
-
 </html>

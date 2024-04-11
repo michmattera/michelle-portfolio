@@ -1,6 +1,6 @@
-import emailjs from '@emailjs/browser';
-
 // main js
+
+//type animation
 document.addEventListener('DOMContentLoaded', function () {
     var options = {
         strings: ["I'm a Full-Stack Developer", 'I Build Websites', "I'm a Back-end Developer", 'I am a data analyst', "I'm a Front-end Developer"],
@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
+// img animation
 document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll('.enter-animation');
 
