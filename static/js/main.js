@@ -54,9 +54,7 @@ function sendEmail() {
         message: message
     }).then(function(response) {
         console.log("Email sent successfully:", response);
-        // Optionally, display a success message to the user
     }, function(error) {
         console.error("Email sending failed:", error);
-        // Optionally, display an error message to the user
     });
 }
