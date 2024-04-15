@@ -6,7 +6,6 @@ from .views import Home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Home, name='home'),
-    # for contact links
-    # path("contact/", views.contact_view, name="contact"),
+    # for contact link
     path('success/', views.success_view, name='success'),
 ]

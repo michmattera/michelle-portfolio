@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['/', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/']
+ALLOWED_HOSTS = ['/', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/', 'mich-portfolio.herokuapp.com']
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -38,11 +38,6 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-
-# EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-# EMAIL_PORT = '2525'
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/']
 # Application definition
