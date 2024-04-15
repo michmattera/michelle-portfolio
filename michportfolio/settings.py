@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/']
-ALLOWED_HOSTS = ['mich-portfolio-8e04475b7506.herokuapp.com']
+ALLOWED_HOSTS = ['mich-portfolio-8e04475b7506.herokuapp.com', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
 
 
 
@@ -135,5 +135,3 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

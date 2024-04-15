@@ -23,3 +23,30 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var aboutSection = $('.about-section');
+        var textSide = $('.about-text-side');
+
+        if (isScrolledIntoView(aboutSection) && !textSide.hasClass('fadeInAnimation')) {
+            console.log("About section is scrolled into view.");
+            textSide.addClass('fadeInAnimation');
+        }
+    });
+
+    function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return (elemBottom <= docViewBottom) && (elemTop >= docViewTop);
+    }
+});
+
+
+
+
