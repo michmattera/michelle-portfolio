@@ -26,9 +26,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['/', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
+ALLOWED_HOSTS = ['/', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-2b4059d336d5.herokuapp.com/']
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
