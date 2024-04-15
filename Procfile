@@ -1,1 +1,1 @@
-web: gunicorn michportfolio.wsgi
+web: gunicorn mich-portfolio.wsgi
