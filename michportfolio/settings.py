@@ -23,17 +23,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
-CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
-CLOUDINARY_CLOUD_NAME = os.environ.get('CLOUDINARY_CLOUD_NAME')
-CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY')
-CLOUDINARY_API_SECRET = os.environ.get('CLOUDINARY_API_SECRET')
+
+# Cloudinary storage settings
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
+    'API_KEY': os.environ.get('API_KEY'),
+    'API_SECRET': os.environ.get('API_SECRET'),
+    'SECURE': True
+}
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/']
-ALLOWED_HOSTS = ['mich-portfolio-8e04475b7506.herokuapp.com', '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
-
+ALLOWED_HOSTS = ['mich-portfolio-8e04475b7506.herokuapp.com',
+                 '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -44,7 +48,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io',
+                        'https://mich-portfolio-8e04475b7506.herokuapp.com/']
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,6 +58,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'myproject',
