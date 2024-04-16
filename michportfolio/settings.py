@@ -38,7 +38,8 @@ DEBUG = False
 
 # ALLOWED_HOSTS = ['8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io', 'https://mich-portfolio-8e04475b7506.herokuapp.com/']
 ALLOWED_HOSTS = ['mich-portfolio-8e04475b7506.herokuapp.com',
-                 '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io']
+                 '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io',
+                 'www.michellemattera.com']
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
