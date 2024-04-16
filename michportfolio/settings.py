@@ -50,7 +50,8 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io',
-                        'https://mich-portfolio-8e04475b7506.herokuapp.com/']
+                        'https://mich-portfolio-8e04475b7506.herokuapp.com/',
+                        'www.michellemattera.com']
 # Application definition
 
 INSTALLED_APPS = [
