@@ -338,6 +338,8 @@ img.small-object-left {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -348,8 +350,8 @@ img.small-object-left {
 }
 
 .frame {
-    width: 80%;
-    height: 85%;
+    width: 70%;
+    height: 75%;
     margin: 0 15%;
     border-radius: 20%;
     opacity: 0;
@@ -678,6 +680,18 @@ textarea {
     padding: 3%;
 }
 
+/* media query for screen size 1225 */
+@media (max-width: 1225px) {
+    /* success section */
+    .frame {
+        width: 80%;
+        height: 85%;
+    }
+    .about-text{
+        font-size: 14px;
+    }
+    
+}
 /* media query for screen size 1025 */
 @media (max-width: 1025px) {
     /* success section */
@@ -925,21 +939,49 @@ textarea {
     }
 
     /* project section */
-    .project-text {
-        padding: 0;
-        width: 50%;
-    }
-
-    img {
-        height: 80%;
-    }
-
     .container-projects {
+        flex-direction: column !important;
         padding-top: 1%;
     }
 
-    .box-icon-small {
-        font-size: 30px;
+    .project-text,
+    .project-img {
+        width: 100%;
+    }
+
+    .project-img {
+        height: 500px;
+        padding: 5% 0;
+    }
+
+    .project-img>img {
+        height: 90%;
+    }
+
+    .project-name {
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .project-name,
+    .project-info {
+        text-align: center;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .project-links {
+        text-align: center !important;
+    }
+
+    .center-p {
+        text-align: center;
+    }
+
+    .justify {
+        justify-content: center;
     }
 
     /* contact section */
@@ -955,6 +997,9 @@ textarea {
         width: 70%;
         margin: 5% 15%;
         height: 250px;
+    }
+    .about-section {
+        height: 880px;
     }
 }
 
@@ -1070,52 +1115,18 @@ textarea {
     }
 
     .about-section {
-        height: 850px;
+        height: 900px;
     }
 
     /* project section */
-    .container-projects {
-        flex-direction: column !important;
-    }
-
-    .project-text,
-    .project-img {
-        width: 100%;
-    }
-
     .project-img {
         height: 350px;
         padding: 5% 0;
     }
 
-    .project-img>img {
-        height: 90%;
-    }
-
     .project-name {
         padding-top: 0;
         font-size: 18px;
-    }
-
-    .project-name,
-    .project-info {
-        text-align: center;
-    }
-
-    .justify-center {
-        justify-content: center;
-    }
-
-    .project-links {
-        text-align: center !important;
-    }
-
-    .center-p {
-        text-align: center;
-    }
-
-    .justify {
-        justify-content: center;
     }
 
     /* contact section */
@@ -1144,6 +1155,19 @@ textarea {
     .landing-container {
         flex-direction: column-reverse;
     }
+    .container-menu{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+    align-content: center;
+    }
+    .container-logo{
+        padding-right: 0 !important;
+        margin: 0 !important;
+    }
+    .logo {
+        height: 40px;
+    }
     .profile-img>img {
         height: 150px;
         width: 50%;
@@ -1166,7 +1190,7 @@ textarea {
 
     /* about section */
     .about-section {
-        height: 950px;
+        height: 1000px;
     }
     .project-img {
         height: 300px;
@@ -1186,7 +1210,7 @@ textarea {
     }
     /* about section */
     .about-section {
-        height: 990px;
+        height: 1000px;
     }
     .project-img {
         height: 300px;
