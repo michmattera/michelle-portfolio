@@ -330,6 +330,7 @@ img.small-object-left {
     position: relative;
     overflow: hidden;
     height: 650px;
+    padding: 5% 0;
     top: 0;
     background-color: #93DCE3;
 }
