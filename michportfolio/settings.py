@@ -34,7 +34,7 @@ CLOUDINARY_STORAGE = {
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mich-portfolio-8e04475b7506.herokuapp.com',
                  '8000-michmattera-michellepor-6kj5vdfmthx.ws-us110.gitpod.io',
