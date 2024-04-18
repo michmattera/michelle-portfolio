@@ -329,7 +329,8 @@ img.small-object-left {
 .about-section {
     position: relative;
     overflow: hidden;
-    height: 650px;
+    /* height: 650px; */
+    height: 100%;
     padding: 5% 0;
     top: 0;
     background-color: #93DCE3;
