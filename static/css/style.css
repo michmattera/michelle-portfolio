@@ -1018,6 +1018,9 @@ textarea {
         height: 110px;
     }
     /* landing section */
+    .wrapper {
+        padding: 0;
+    }
     .headings,
     .sub-headings {
         text-align: center;
